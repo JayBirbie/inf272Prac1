@@ -9,7 +9,7 @@ namespace jayStudyGroup.Controllers
     public class groupController : Controller
     {
         // GET: group
-        public ActionResult Index()
+        public ActionResult listMembers()
         {
             List<Models.memberModel> members = new List<Models.memberModel>();
 

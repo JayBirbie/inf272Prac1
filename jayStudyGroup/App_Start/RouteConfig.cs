@@ -14,6 +14,12 @@ namespace jayStudyGroup
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "ListMembersGroup",
+                url: "listMembers/group",
+                defaults: new { controller = "group", action = "listMembers" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
