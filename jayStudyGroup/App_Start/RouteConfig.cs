@@ -15,8 +15,8 @@ namespace jayStudyGroup
 
             routes.MapRoute(
                 name: "ListMembersGroup",
-                url: "listMembers/group",
-                defaults: new { controller = "group", action = "listMembers" }
+                url: "listMembers/Group",
+                defaults: new { controller = "Group", action = "listMembers" }
             );
 
             routes.MapRoute(
